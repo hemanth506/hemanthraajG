@@ -10,14 +10,14 @@ import { RightNav } from "../../components/RightNav";
 
 export const Home = () => {
   return (
-    <div>
+    <div id="container">
       <BrowserRouter>
         <Header />
         <main id="main_content">
           <section id="left_nav_content">
             <LeftNav />
           </section>
-          <section>
+          <section id="main_content_routes">
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/archive" element={<ArchievePage />} />
