@@ -1,0 +1,9 @@
+#home_page_main_content {
+  display: flex;
+  justify-content: center;
+}
+
+#contents {
+  width: 75%;
+  /* border: 1px solid; */
+}

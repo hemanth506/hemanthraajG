@@ -12,6 +12,7 @@
 #email {
   text-orientation: mixed;
   writing-mode: vertical-lr;
+  letter-spacing: 0.2px;
 }
 
 #line::after {
