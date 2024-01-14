@@ -24,13 +24,19 @@
   --fz-xxl: 22px;
   --fz-heading: 32px;
   --border-radius: 4px;
-  /* --nav-height: 100px;
-  --nav-scroll-height: 70px; */
+  --nav-height: 100px;
+  --nav-scroll-height: 70px;
 }
 
 .App {
   width: 100vw;
   height: 100vh;
   background-color: var(--navy);
-  color: var(--white);
+  color: var(--lightest-slate);
+  font-family: var(--font-mono);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
