@@ -1,13 +1,13 @@
 #social-media-content {
   position: absolute;
-  left: 55px;
+  left: 42px;
   bottom: 0px;
 }
 
 #social-media-icons {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 18px;
   align-items: center;
   padding: 3px;
 }

@@ -26,7 +26,7 @@
 #email:hover {
   color: var(--green);
   cursor: pointer;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   transition-duration: 80ms;
   transition-timing-function: linear;
 }
