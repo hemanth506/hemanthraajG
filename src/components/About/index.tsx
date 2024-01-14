@@ -8,10 +8,11 @@ export const About = () => {
     "TypeScript",
     "React",
     "Node.js",
-    "Core Java",
+    "Twilio", "GCP Generative AI",
     "Docker",
+    "Core Java",
     "Core PHP",
-    "D3.js",
+    "Git",
     "Micro-services (Basics)",
     "Micro-frontends (Basics)",
   ];

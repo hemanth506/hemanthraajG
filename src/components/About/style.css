@@ -1,6 +1,7 @@
 #about_me_main_content {
   display: flex;
   justify-content: center;
+  margin: 30px 0px;
 }
 
 #about_me_main {
@@ -12,7 +13,7 @@
   -webkit-box-align: center;
   align-items: center;
   position: relative;
-  margin: 10px 0px 40px;
+  margin: 10px 0px 20px;
   width: 100%;
   font-size: clamp(26px, 5vw, var(--fz-heading));
   white-space: nowrap;
@@ -52,7 +53,7 @@
 
 #image_section {
   width: 40%;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
 
 .skillset {
