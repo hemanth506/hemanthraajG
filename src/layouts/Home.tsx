@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage } from "../pages/HomePage";
-import { ArchievePage } from "../pages/ArchievePage";
-import { NotFoundPage } from "../pages/NotFoundPage";
+import { HomePage } from "../pages/HomePage/index";
+import { NotFoundPage } from "../pages/NotFoundPage/index";
+import { ArchievePage } from "../pages/ArchievePage/index";
 
 export const Home = () => {
   return (
