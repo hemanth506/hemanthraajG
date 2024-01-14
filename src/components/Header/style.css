@@ -15,9 +15,15 @@
 }
 
 #header_logo {
-  font-size: var(--fz-xxl);
+  font-size: var(--fz-heading);
   font-weight: 800;
   margin: 0px;
+  font-family: var(--font-sans);
+}
+
+#header_logo_R {
+  color: var(--green);
+
 }
 
 #right_header {

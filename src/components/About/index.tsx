@@ -8,11 +8,14 @@ export const About = () => {
     "TypeScript",
     "React",
     "Node.js",
-    "Twilio", "GCP Generative AI",
+    "Twilio",
+    "GCP Generative AI",
     "Docker",
     "Core Java",
     "Core PHP",
     "Git",
+    "MongoDB",
+    "MySQL",
     "Micro-services (Basics)",
     "Micro-frontends (Basics)",
   ];
@@ -24,31 +27,30 @@ export const About = () => {
           <section id="about_section">
             <div>
               <p>
-                Hello! My name is Brittany and I enjoy creating things that live
+                Hello! My name is Hemanth and I enjoy creating things that live
                 on the internet. My interest in web development started back in
-                2012 when I decided to try editing custom Tumblr themes — turns
-                out hacking together a custom reblog button taught me a lot
-                about HTML & CSS!
+                2019 when I was doing my final year project❤️.
               </p>
               <p>
-                Fast-forward to today, and I’ve had the privilege of working at
-                an advertising agency, a start-up, a huge corporation, and a
-                student-led design studio. My main focus these days is building
-                accessible, inclusive products and digital experiences at
-                Upstatement for a variety of clients.
+                In my <span className="text_highlight">3+ years</span> of experience, I have learnt a bunch of technologies, like React.js,
+                Node.js, and Typescript, and I have started exploring React
+                Native gradually. I love solving DSA problems, and I've solved
+                more than <span className="text_highlight">400</span> of them on different platforms.
               </p>
               <p>
-                I also recently launched a course that covers everything you
-                need to build a web app with the Spotify API using Node & React.
+                I have worked on Twilio for creating IVRs to provide Contact
+                center solutions to the Customers. Recently I got a
+                chance to do R&D work on Generative AI tools from Google Cloud
+                and AWS which helps me understand the basics of AI.
               </p>
-              <p>
+              <div>
                 Here are a few technologies I’ve been working with recently:
                 <ul className="skillset">
                   {skillSet.map((skill, index) => (
                     <li key={index}>{skill}</li>
                   ))}
                 </ul>
-              </p>
+              </div>
             </div>
           </section>
           <section id="image_section">

@@ -17,9 +17,8 @@ export const Intro = () => {
       </div>
       <div id="about_description">
         <span>
-          I’m a software developer specializing in building (and occasionally
-          designing) exceptional digital experiences. Currently, I’m focused on
-          building accessible, human-centered products at Upstatement.
+          I'm a Full-stack web developer and a Freelancer. I've been doing this for over three
+          years, and I enjoy creating websites and solving problems.
         </span>
       </div>
     </div>

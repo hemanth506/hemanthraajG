@@ -11,7 +11,9 @@ export const Header = () => {
   return (
     <div id="header_component">
       <div id="header">
-        <p id="header_logo">H</p>
+        <a href="#">
+          <h1 id="header_logo">H<span id="header_logo_R">R</span></h1>
+        </a>
         <div id="right_header">
           <div id="right_header_item">
             {headContentList.map((item) => (

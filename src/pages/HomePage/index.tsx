@@ -2,6 +2,8 @@ import React from "react";
 import { Intro } from "../../components/Intro";
 import "./style.css";
 import { About } from "../../components/About";
+import { Experience } from "../../components/Experience";
+import { Contact } from "../../components/Contact";
 
 export const HomePage = () => {
   return (
@@ -9,6 +11,10 @@ export const HomePage = () => {
       <div id="contents">
         <Intro />
         <About />
+        <Experience />
+        
+        <Contact />
+        
       </div>
     </div>
   );
