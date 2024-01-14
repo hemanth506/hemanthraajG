@@ -9,7 +9,6 @@
   flex-direction: column;
   gap: 18px;
   align-items: center;
-  padding: 3px;
 }
 
 #social-media-icons::after {
