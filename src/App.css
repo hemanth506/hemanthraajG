@@ -40,3 +40,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+h2 {
+  font-weight: 600;
+  color: var(--lightest-slate);
+  line-height: 1.1;
+}

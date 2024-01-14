@@ -1,7 +1,60 @@
-import React from 'react'
+import React from "react";
+import "./style.css";
+import Hemanth from "../../assets/ReadyPlayerMe-Avatar.png";
 
 export const About = () => {
+  const skillSet = [
+    "JavaScript (ES6+)",
+    "TypeScript",
+    "React",
+    "Node.js",
+    "Core Java",
+    "Docker",
+    "Core PHP",
+    "D3.js",
+    "Micro-services (Basics)",
+    "Micro-frontends (Basics)",
+  ];
   return (
-    <div>About</div>
-  )
-}
+    <div id="about_me_main_content">
+      <div id="about_me_main">
+        <h2 id="about_heading">About Me</h2>
+        <div id="about_content">
+          <section id="about_section">
+            <div>
+              <p>
+                Hello! My name is Brittany and I enjoy creating things that live
+                on the internet. My interest in web development started back in
+                2012 when I decided to try editing custom Tumblr themes — turns
+                out hacking together a custom reblog button taught me a lot
+                about HTML & CSS!
+              </p>
+              <p>
+                Fast-forward to today, and I’ve had the privilege of working at
+                an advertising agency, a start-up, a huge corporation, and a
+                student-led design studio. My main focus these days is building
+                accessible, inclusive products and digital experiences at
+                Upstatement for a variety of clients.
+              </p>
+              <p>
+                I also recently launched a course that covers everything you
+                need to build a web app with the Spotify API using Node & React.
+              </p>
+              <p>
+                Here are a few technologies I’ve been working with recently:
+                <ul className="skillset">
+                  {skillSet.map((skill, index) => (
+                    <li key={index}>{skill}</li>
+                  ))}
+                </ul>
+              </p>
+            </div>
+          </section>
+          <section id="image_section">
+            <img src={Hemanth} alt="" width={380} id="image" />
+          </section>
+        </div>
+      </div>
+    </div>
+  );
+};

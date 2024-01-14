@@ -1,0 +1,75 @@
+#about_me_main_content {
+  display: flex;
+  justify-content: center;
+}
+
+#about_me_main {
+  width: 90%;
+}
+
+#about_heading {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin: 10px 0px 40px;
+  width: 100%;
+  font-size: clamp(26px, 5vw, var(--fz-heading));
+  white-space: nowrap;
+}
+
+
+#about_heading::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--lightest-navy);
+}
+
+#about_heading::before {
+  position: relative;
+  bottom: 4px;
+  content: "01.";
+  margin-right: 10px;
+  top: 4px;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
+  font-weight: 400;
+}
+
+
+#about_content {
+  display: flex;
+}
+
+#about_section {
+  width: 60%;
+}
+
+#image_section {
+  width: 40%;
+  border: 1px solid;
+}
+
+.skillset {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none;
+}
+
+ul.skillset li::before {
+  content: "▹";
+  margin-right: 3px;
+  left: 0px;
+  color: var(--green);
+  font-size: var(--fz-sm);
+  line-height: 12px;
+}
