@@ -1,0 +1,32 @@
+#email-content {
+  position: absolute;
+  right: 55px;
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+#email {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+}
+
+#line::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+
+#email:hover {
+  color: var(--green);
+  cursor: pointer;
+  letter-spacing: 1px;
+  transition-duration: 80ms;
+  transition-timing-function: linear;
+}

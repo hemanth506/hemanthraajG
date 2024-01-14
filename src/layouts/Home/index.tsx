@@ -6,6 +6,7 @@ import { ArchievePage } from "../../pages/ArchievePage/index";
 import { Header } from "../../components/Header";
 import "./style.css";
 import { LeftNav } from "../../components/LeftNav";
+import { RightNav } from "../../components/RightNav";
 
 export const Home = () => {
   return (
@@ -23,7 +24,9 @@ export const Home = () => {
               <Route path="/*" element={<NotFoundPage />} />
             </Routes>
           </section>
-          <section id="right_nav_content">Right Nav</section>
+          <section id="right_nav_content">
+            <RightNav />
+          </section>
         </main>
       </BrowserRouter>
     </div>

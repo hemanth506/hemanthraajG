@@ -15,7 +15,7 @@
 #social-media-icons::after {
   content: "";
   display: block;
-  width: 2px;
+  width: 1px;
   height: 90px;
   margin: 0px auto;
   background-color: var(--light-slate);
