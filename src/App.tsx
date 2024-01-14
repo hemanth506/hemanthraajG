@@ -1,5 +1,5 @@
 import './App.css';
-import { Home } from './layouts/Home';
+import { Home } from './layouts/Home/index';
 
 const App: React.FC =() => {
   return (

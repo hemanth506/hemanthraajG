@@ -1,0 +1,37 @@
+#social-media-content {
+  position: absolute;
+  left: 55px;
+  bottom: 0px;
+}
+
+#social-media-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  padding: 3px;
+}
+
+#social-media-icons::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+
+.icons {
+  color: var(--light-slate);
+  padding: 5px;
+  border: 1px solid var(--navy);
+  border-radius: var(--border-radius);
+}
+
+.icons:hover {
+  transform: translateY(-4px) translateX(-4px);
+  transition-duration: 80ms;
+  border: 1px solid var(--green);
+  transition-timing-function: linear;
+  box-shadow: 3px 3px 3px 0px var(--green);
+}

@@ -15,8 +15,8 @@ export const Header = () => {
         <div id="right_header">
           <div id="right_header_item">
             {headContentList.map((item) => (
-              <a href="#">
-                <p className="head_item" key={item.index}>
+              <a href="#" key={item.index}>
+                <p className="head_item">
                   <span className="head_num">{item.index}</span>
                   <span className="head_title">{item.title}</span>
                 </p>
