@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-export const About = () => {
+export const Intro = () => {
   return (
     <div id="about_main_content">
       <div id="about_intro_content">
