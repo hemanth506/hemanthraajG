@@ -16,7 +16,7 @@ export const Contact = () => {
           <a href="mailto:hemanthraaj31@gmail.com">Say Hello</a>
         </p>
         <div id="built_by">
-          <p>Built by Hemanth Raaj👍 </p>
+          <p>Built by Hemanth Raaj @ 2024 💗</p>
         </div>
       </div>
     </div>

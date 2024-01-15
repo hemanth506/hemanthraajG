@@ -69,3 +69,7 @@
   transition-timing-function: linear;
   box-shadow: 3px 3px 0px 0px var(--green);
 }
+
+#built_by {
+  color: var(--slate);
+}
