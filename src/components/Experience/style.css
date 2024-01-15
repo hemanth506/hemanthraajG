@@ -6,9 +6,8 @@
 
 #experience_main {
   width: 75%;
-  border: 1px solid;
+  /* border: 1px solid; */
 }
-
 
 #experience_heading {
   display: flex;
@@ -20,7 +19,6 @@
   font-size: clamp(26px, 5vw, var(--fz-heading));
   white-space: nowrap;
 }
-
 
 #experience_heading::after {
   content: "";
@@ -42,4 +40,108 @@
   font-family: var(--font-mono);
   font-size: clamp(var(--fz-md), 3vw, var(--fz-xl));
   font-weight: 400;
+}
+
+.companyName {
+  font-size: var(--fz-md);
+  font-family: var(--font-mono);
+  color: var(--slate);
+}
+
+/* .tab_parent:hover {
+  background-color: var(--green-tint);
+} */
+
+/* .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--green-tint) !important; 
+  font-weight: 500;
+}
+
+.ant-tabs-tab-active {
+  color: var(--green);
+  background-color: var(--green-tint);
+} */
+
+.ant-tabs-ink-bar {
+  border: 1px solid var(--green);
+}
+
+.tab_parent {
+  /* margin-left: -20px; */
+  margin-top: 40px;
+}
+
+.exp_title {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.exp_fullName {
+  color: var(--green);
+}
+
+.exp_duration {
+  font-family: var(--font-mono);
+  color: var(--lightest-slate);
+}
+
+.companyLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.companyLink:hover {
+  text-decoration: underline 1px;
+  color: var(--green);
+}
+
+.expPointList {
+  overflow: hidden;
+  list-style: none;
+  color: var(--slate);
+  padding: 0px;
+  margin: 20px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: var(--fz-md);
+  font-family: var(--font-sans);
+}
+
+ul.expPointList li::before {
+  content: "▹";
+  margin-right: 10px;
+  left: 0px;
+  color: var(--green);
+  font-size: var(--fz-lg);
+  line-height: 15px;
+}
+
+.ant-tabs-tab:hover {
+  background-color: var(--green-tint);
+}
+
+.ant-tabs-tab:hover > .ant-tabs-tab-btn > .companyName {
+  color: var(--green);
+}
+
+/* .ant-tabs-left >.ant-tabs-content-holder {
+  border-left: none;
+}
+
+.ant-tabs-nav-wrap {
+  border-left: 1px solid #d9d9d9;
+  height: 40px;
+} */
+
+
+.tab_parent .ant-tabs-tab-active {
+  background-color: var(--green-tint);
+  color: var(--green);
+}
+
+
+.tab_parent .ant-tabs-tab-active > .ant-tabs-tab-btn > .companyName {
+  color: var(--green);
 }
