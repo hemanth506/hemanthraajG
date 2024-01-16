@@ -15,6 +15,7 @@ export const Header: React.FC<ChildComponentProps> = ({ controller }) => {
     { index: "04.", title: "Contact", onClick: () => controller(contactRef, "contact") },
   ];
   return (
+    // <div id="header_name_component">
     <div id="header_component">
       <div id="header">
         <a href="#">
@@ -32,6 +33,7 @@ export const Header: React.FC<ChildComponentProps> = ({ controller }) => {
           <p id="head_resume">
             <a href="#">Resume</a>
           </p>
+        {/* </div> */}
         </div>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React, { Suspense, lazy, useCallback } from "react";
+import React, { Suspense, lazy, useCallback, useEffect, useState } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import { HomePage } from "../../pages/HomePage/index";
 import { NotFoundPage } from "../../pages/NotFoundPage/index";
@@ -13,6 +13,33 @@ import "./style.css";
 const HomePage = lazy(() => import("../../pages/HomePage/index"));
 
 export const Home: React.FC = () => {
+  // const [scrollPosition, setScrollPosition] = useState(0);
+  // const [isScrollingUp, setIsScrollingUp] = useState(false);
+
+  // const handleScroll = () => {
+  //   const currentScrollPos = window.scrollY;
+  //   console.log(isScrollingUp)
+  //   if (currentScrollPos < scrollPosition && !isScrollingUp) {
+  //     console.log(
+  //       "🚀 currentScrollPos:", currentScrollPos, " scrollPosition:", scrollPosition
+  //     );
+  //     console.log("Scrolling up!");
+  //     setIsScrollingUp(true);
+  //   } else if (isScrollingUp) {
+  //     setIsScrollingUp(false);
+  //   }
+
+  //   setScrollPosition(currentScrollPos);
+  // };
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [scrollPosition]);
+
   const scrollToView = useCallback((
     currentRef: React.RefObject<HTMLElement>,
     section: string

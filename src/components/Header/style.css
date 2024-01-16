@@ -14,6 +14,21 @@
   padding: 5px 10px;
 }
 
+#header_name_component_COPY {
+  height: var(--nav-height);
+}
+
+#header_component_COPY {
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 90;
+  background-color: var(--navy);
+  opacity: 0.9;
+}
+
 #header_logo {
   font-size: var(--fz-heading);
   font-weight: 800;
