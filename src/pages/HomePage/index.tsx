@@ -6,7 +6,7 @@ import { Experience } from "../../components/Experience";
 import { Contact } from "../../components/Contact";
 import { Projects } from "../../components/Projects";
 
-export const HomePage: React.FC = () => {
+const HomePage: React.FC = () => {
   return (
     <div id="home_page_main_content">
       <div id="contents">
@@ -19,3 +19,5 @@ export const HomePage: React.FC = () => {
     </div>
   );
 };
+
+export default HomePage;

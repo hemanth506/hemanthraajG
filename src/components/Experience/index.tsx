@@ -21,7 +21,7 @@ const experienceArr = [
     role: "Full-stack Web Developer",
     content: {
       fullName: "Factana Solution Pvt Ltd",
-      link: "",
+      link: "https://www.factana.com",
       duration: "Oct 2021 - Present",
       description: [
         "Proficient in working with client APIs to facilitate seamless integration between applications and services.",
@@ -51,7 +51,7 @@ const experienceArr = [
     role: "Software developer",
     content: {
       fullName: "Prviga Solution Ltd",
-      link: "",
+      link: "https://prviga.com",
       duration: "July 2020 - Sept 2021",
       description: [
         "Wrote server-side and client-side code for a product named 'Widuni' using Node.js, Express.js, PHP, Java, HTML, CSS, JavaScript, JQuery, MongoDB, and SQL database.",
@@ -88,7 +88,7 @@ export const Experience = () => {
                 <span> @ </span>
                 <a
                   className="companyLink"
-                  href="https://prviga.com"
+                  href={company.content.link}
                   target="_blank"
                 >
                   {company.content.fullName}

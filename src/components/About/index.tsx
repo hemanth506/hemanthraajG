@@ -42,7 +42,7 @@ export const About = () => {
               <p>
                 I have worked on Twilio for creating IVRs to provide Contact
                 center solutions to the Customers. Recently I got a
-                chance to do R&D work on Generative AI tools from Google Cloud
+                chance to explore Generative AI tools from Google Cloud
                 and AWS which helps me understand the basics of AI.
               </p>
               <div>
