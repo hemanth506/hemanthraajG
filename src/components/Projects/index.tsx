@@ -5,8 +5,10 @@ import ExternalLink from "../../assets/external-link.svg";
 import FlexO from "../../assets/FlexO.png";
 import Techsol from "../../assets/Techsol-HomePage.png";
 import Chatty from "../../assets/Chat-ty - Home.png";
+import { useMyContext } from "../../Hooks/MyContext";
 
 export const Projects = () => {
+  const { workRef } = useMyContext();
   const projectsDetails = [
     {
       title: "TechSol",
@@ -31,7 +33,7 @@ export const Projects = () => {
     },
   ];
   return (
-    <div id="projects_main_content">
+    <div id="projects_main_content" ref={workRef}>
       <div id="projects_main">
         <h2 id="projects_heading">Some Things I’ve Built</h2>
         <div id="projects_view">

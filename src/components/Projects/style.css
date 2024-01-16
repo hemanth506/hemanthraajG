@@ -1,7 +1,8 @@
 #projects_main_content {
   display: flex;
   justify-content: center;
-  margin: 30px 0px;
+  /* margin: 30px 0px; */
+  padding-top: 80px;
   /* border: 1px solid; */
 }
 

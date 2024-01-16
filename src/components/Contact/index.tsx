@@ -1,9 +1,11 @@
-import React from "react";
+import React, { LegacyRef, MutableRefObject } from "react";
 import "./style.css";
+import { useMyContext } from "../../Hooks/MyContext";
 
-export const Contact = () => {
+export const Contact: React.FC = () => {
+  const { contactRef } = useMyContext();
   return (
-    <div id="contact_main_content">
+    <div id="contact_main_content" ref={contactRef}>
       <div id="contact_main">
         <span id="contact_next">What’s Next?</span>
         <h2 id="contact_intouch">Get In Touch</h2>

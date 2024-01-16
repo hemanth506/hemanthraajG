@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.css";
 import Hemanth from "../../assets/ReadyPlayerMe-Avatar.png";
+import { useMyContext } from "../../Hooks/MyContext";
 
 export const About = () => {
+  const { aboutRef } = useMyContext();
   const skillSet = [
     "JavaScript (ES6+)",
     "TypeScript",
@@ -20,7 +22,7 @@ export const About = () => {
     "Micro-frontends (Basics)",
   ];
   return (
-    <div id="about_me_main_content">
+    <div id="about_me_main_content" ref={aboutRef}>
       <div id="about_me_main">
         <h2 id="about_heading">About Me</h2>
         <div id="about_content">

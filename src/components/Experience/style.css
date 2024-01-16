@@ -1,12 +1,12 @@
 #experience_main_content {
   display: flex;
   justify-content: center;
-  margin: 30px 0px;
+  /* margin: 30px 0px; */
+  padding-top: 80px;
 }
 
 #experience_main {
   width: 75%;
-  /* border: 1px solid; */
 }
 
 #experience_heading {

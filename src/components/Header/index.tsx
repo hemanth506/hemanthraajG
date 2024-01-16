@@ -1,12 +1,18 @@
 import React from "react";
 import "./style.css";
+import { useMyContext } from "../../Hooks/MyContext";
 
-export const Header = () => {
+interface ChildComponentProps {
+  controller: (currentRef: React.RefObject<HTMLElement>, section: string) => void;
+}
+
+export const Header: React.FC<ChildComponentProps> = ({ controller }) => {
+  const { aboutRef, experienceRef, workRef, contactRef } = useMyContext();
   const headContentList = [
-    { index: "01.", title: "About" },
-    { index: "02.", title: "Experience" },
-    { index: "03.", title: "Work" },
-    { index: "04.", title: "Contact" },
+    { index: "01.", title: "About", onClick: () => controller(aboutRef, "about") },
+    { index: "02.", title: "Experience", onClick: () => controller(experienceRef, "experience") },
+    { index: "03.", title: "Work", onClick: () => controller(workRef, "work") },
+    { index: "04.", title: "Contact", onClick: () => controller(contactRef, "contact") },
   ];
   return (
     <div id="header_component">
@@ -17,12 +23,10 @@ export const Header = () => {
         <div id="right_header">
           <div id="right_header_item">
             {headContentList.map((item) => (
-              <a href="#" key={item.index}>
-                <p className="head_item">
-                  <span className="head_num">{item.index}</span>
-                  <span className="head_title">{item.title}</span>
-                </p>
-              </a>
+              <p className="head_item" key={item.index} onClick={item.onClick}>
+                <span className="head_num">{item.index}</span>
+                <span className="head_title">{item.title}</span>
+              </p>
             ))}
           </div>
           <p id="head_resume">

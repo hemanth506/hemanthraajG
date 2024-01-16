@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Tabs, ConfigProvider } from "antd";
+import { useMyContext } from "../../Hooks/MyContext";
 
 type company = {
   name: string;
@@ -75,6 +76,8 @@ const experienceArr = [
 ];
 
 export const Experience = () => {
+  const { experienceRef } = useMyContext();
+
   const generateChildContent = (company: company) => {
     return (
       <div>
@@ -108,8 +111,9 @@ export const Experience = () => {
   const generateParent = (companyName: string) => (
     <span className="companyName">{companyName}</span>
   );
+
   return (
-    <div id="experience_main_content">
+    <div id="experience_main_content" ref={experienceRef}>
       <div id="experience_main">
         <h2 id="experience_heading">Where I’ve Worked</h2>
         <Tabs

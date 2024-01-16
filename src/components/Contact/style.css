@@ -3,7 +3,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
 
 #contact_main {
@@ -13,6 +12,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding-top: 80px;
 }
 
 #contact_next {
