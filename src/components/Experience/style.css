@@ -132,10 +132,10 @@ ul.expPointList li::before {
   color: var(--green);
 }
 
-/* .ant-tabs-left >.ant-tabs-content-holder {
-  border-left: none;
+ .ant-tabs-left >.ant-tabs-content-holder {
+  border-left: 2px solid var(--lightest-navy);
 }
-
+/*
 .ant-tabs-nav-wrap {
   border-left: 1px solid #d9d9d9;
   height: 40px;
