@@ -3,14 +3,16 @@ import github from "../../assets/github.svg";
 import leetcode from "../../assets/leetcode.svg";
 import linkedIn from "../../assets/linkedIn.svg";
 import instagram from "../../assets/instagram.svg";
+import telephone from "../../assets/telephone.svg";
 import "./style.css";
 
 export const LeftNav = () => {
   const socialMediaLinks = [
-    { src: github, link: "https://github.com/hemanth506" },
-    { src: leetcode, link: "https://leetcode.com/hemanthraaj31" },
-    { src: linkedIn, link: "https://www.linkedin.com/in/hemanth-raaj-g" },
-    { src: instagram, link: "https://www.instagram.com/hemanthraaj31" },
+    { src: github, className: "github", link: "https://github.com/hemanth506" },
+    { src: leetcode, className: "leetcode", link: "https://leetcode.com/hemanthraaj31" },
+    { src: linkedIn, className: "linkedIn", link: "https://www.linkedin.com/in/hemanth-raaj-g" },
+    { src: instagram, className: "instagram", link: "https://www.instagram.com/hemanthraaj31" },
+    {src: telephone, className: "telephone", link: "tel://+919962644103"}
   ];
 
   return (
@@ -22,7 +24,7 @@ export const LeftNav = () => {
               <img
                 src={media.src}
                 alt={`Social Media ${index}`}
-                className="icons"
+                className={`icons ${media.className}`}
               />
             </a>
           ))}
