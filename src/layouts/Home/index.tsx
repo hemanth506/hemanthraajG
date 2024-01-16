@@ -1,4 +1,11 @@
-import React, { Suspense, lazy, useCallback, useEffect, useState } from "react";
+import React, {
+  Suspense,
+  lazy,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // import { HomePage } from "../../pages/HomePage/index";
 import { NotFoundPage } from "../../pages/NotFoundPage/index";
@@ -13,48 +20,62 @@ import "./style.css";
 const HomePage = lazy(() => import("../../pages/HomePage/index"));
 
 export const Home: React.FC = () => {
-  // const [scrollPosition, setScrollPosition] = useState(0);
-  // const [isScrollingUp, setIsScrollingUp] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
+  // const [isLastEventScrollToView, setIsLastEventScrollToView] = useState(false);
+  const headerEltRef = useRef<HTMLDivElement>(null);
 
-  // const handleScroll = () => {
-  //   const currentScrollPos = window.scrollY;
-  //   console.log(isScrollingUp)
-  //   if (currentScrollPos < scrollPosition && !isScrollingUp) {
-  //     console.log(
-  //       "🚀 currentScrollPos:", currentScrollPos, " scrollPosition:", scrollPosition
-  //     );
-  //     console.log("Scrolling up!");
-  //     setIsScrollingUp(true);
-  //   } else if (isScrollingUp) {
-  //     setIsScrollingUp(false);
-  //   }
-
-  //   setScrollPosition(currentScrollPos);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, [scrollPosition]);
-
-  const scrollToView = useCallback((
-    currentRef: React.RefObject<HTMLElement>,
-    section: string
-  ): void => {
-    if (currentRef.current) {
-      currentRef.current.scrollIntoView({ behavior: "smooth" });
-      window.location.hash = `#${section}`;
+  const handleScroll = useCallback(() => {
+    const currentScrollPos = window.scrollY;
+    if (currentScrollPos < scrollPosition) {
+      console.log("Scrolling up!");
+      setIsScrollingUp(true);
+    } else {
+      setIsScrollingUp(false);
     }
-  }, []);
+    setScrollPosition(currentScrollPos);
+  }, [scrollPosition, setIsScrollingUp]);
+
+  useEffect(() => {
+    const headerElt = headerEltRef.current;
+    console.log("Effect event", isScrollingUp);
+    if (headerElt) {
+      if (isScrollingUp) {
+        console.log("changing to fixed");
+        headerElt.style.position = "fixed";
+      } else {
+        headerElt.style.position = "relative";
+      }
+    }
+  }, [isScrollingUp]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrollPosition]);
+
+  const scrollToView = useCallback(
+    (currentRef: React.RefObject<HTMLElement>, section: string): void => {
+      if (currentRef.current) {
+        if (headerEltRef.current) {
+          headerEltRef.current.style.position = "relative";
+          setIsScrollingUp(true);
+          console.log("relative in the scrollToView", isScrollingUp);
+        }
+        currentRef.current.scrollIntoView({ behavior: "smooth" });
+        window.location.hash = `#${section}`;
+      }
+    },
+    [headerEltRef]
+  );
 
   return (
     <div id="container">
       <BrowserRouter>
         <MyContextProvider>
-          <Header controller={scrollToView} />
+          <Header controller={scrollToView} headerEltRef={headerEltRef} />
           <main id="main_content">
             <section id="left_nav_content">
               <LeftNav />
@@ -81,10 +102,4 @@ export const Home: React.FC = () => {
       </BrowserRouter>
     </div>
   );
-};
-
-const loadingStyle = {
-  height: "100vh",
-  width: "100vw",
-  backgroundColor: "#0a192f",
 };
