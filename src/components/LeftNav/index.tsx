@@ -7,10 +7,10 @@ import "./style.css";
 
 export const LeftNav = () => {
   const socialMediaLinks = [
-    { src: github, link: "" },
-    { src: leetcode, link: "" },
-    { src: linkedIn, link: "" },
-    { src: instagram, link: "" },
+    { src: github, link: "https://github.com/hemanth506" },
+    { src: leetcode, link: "https://leetcode.com/hemanthraaj31" },
+    { src: linkedIn, link: "https://www.linkedin.com/in/hemanth-raaj-g" },
+    { src: instagram, link: "https://www.instagram.com/hemanthraaj31" },
   ];
 
   return (
