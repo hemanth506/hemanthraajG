@@ -51,13 +51,13 @@ export const Projects = () => {
         <div id="projects_view">
           {projectsDetails.map((project, index) => (
             <div
-              className={`project_view  ${index === 1 && "project_view_rev"}`}
+              className={`project_view  ${index % 2 === 0 && "project_view_rev"}`}
               key={index}
             >
               <div className="projects_left_view">
                 <div
                   className={`project_title  ${
-                    index === 1 && "project_title_rev"
+                    index % 2 === 0 && "project_title_rev"
                   }`}
                 >
                   <p className="project_featured">Featured Project</p>
@@ -66,7 +66,7 @@ export const Projects = () => {
                 <div className="project_description">
                   <span
                     className={`project_description_content ${
-                      index === 1 && "project_description_content_rev"
+                      index % 2 === 0 && "project_description_content_rev"
                     }`}
                   >
                     {project.description}
@@ -74,7 +74,7 @@ export const Projects = () => {
                 </div>
                 <ul
                   className={`project_tools ${
-                    index === 1 && "project_tools_rev"
+                    index % 2 === 0 && "project_tools_rev"
                   }`}
                 >
                   {project.toolList.map((tool, index) => (
@@ -83,7 +83,7 @@ export const Projects = () => {
                 </ul>
                 <div
                   className={`project_outcome ${
-                    index === 1 && "project_outcome_rev"
+                    index % 2 === 0 && "project_outcome_rev"
                   }`}
                 >
                   <a
@@ -112,7 +112,7 @@ export const Projects = () => {
               </div>
               <div
                 className={`projects_right_view ${
-                  index === 1 && "projects_right_view_rev"
+                  index % 2 === 0 && "projects_right_view_rev"
                 }`}
               >
                 <div className="project_image_view">

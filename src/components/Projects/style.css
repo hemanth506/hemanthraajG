@@ -163,14 +163,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 550px;
-  right: 20px;
+  /* width: 550px; */
+  right: 40px;
 }
 
 /* reverse */
 .projects_right_view_rev {
   right: 0px;
-  left: 20px
+  left: 40px
 }
 
 .project_image_view {
