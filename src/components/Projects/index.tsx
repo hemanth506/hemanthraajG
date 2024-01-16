@@ -38,6 +38,7 @@ export const Projects = () => {
           {projectsDetails.map((project, index) => (
             <div
               className={`project_view  ${index === 1 && "project_view_rev"}`}
+              key={index}
             >
               <div className="projects_left_view">
                 <div

@@ -97,8 +97,8 @@ export const Experience = () => {
         </h2>
         <span className="exp_duration">{company.content.duration}</span>
         <ul className="expPointList">
-          {company.content.description.map((point) => (
-            <li className="exp_points">{point}</li>
+          {company.content.description.map((point, index) => (
+            <li className="exp_points" key={index}>{point}</li>
           ))}
         </ul>
       </div>
