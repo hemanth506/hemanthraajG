@@ -1,4 +1,4 @@
-import React from "react";
+import React, { LegacyRef, MutableRefObject } from "react";
 import { Intro } from "../../components/Intro";
 import "./style.css";
 import { About } from "../../components/About";
@@ -6,7 +6,7 @@ import { Experience } from "../../components/Experience";
 import { Contact } from "../../components/Contact";
 import { Projects } from "../../components/Projects";
 
-export const HomePage = () => {
+export const HomePage: React.FC = () => {
   return (
     <div id="home_page_main_content">
       <div id="contents">
