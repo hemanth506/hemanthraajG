@@ -2,7 +2,12 @@
   display: flex;
   justify-content: center;
   /* margin: 30px 0px; */
-  padding-top: 80px;
+  /* padding-top: 80px; */
+  
+}
+
+#experience_parent_conent {
+  padding: 80px 0px 140px 0px;
 }
 
 #experience_main {
@@ -69,6 +74,7 @@
 .tab_parent {
   /* margin-left: -20px; */
   margin-top: 40px;
+  height: 180px;
 }
 
 .exp_title {

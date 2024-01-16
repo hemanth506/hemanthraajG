@@ -1,4 +1,4 @@
-import React, { LegacyRef, MutableRefObject } from "react";
+import React from "react";
 import { Intro } from "../../components/Intro";
 import "./style.css";
 import { About } from "../../components/About";

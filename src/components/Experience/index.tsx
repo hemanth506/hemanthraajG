@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Tabs, ConfigProvider } from "antd";
+import { Tabs } from "antd";
 import { useMyContext } from "../../Hooks/MyContext";
 
 type company = {
@@ -72,7 +72,6 @@ const experienceArr = [
       ],
     },
   },
-  
 ];
 
 export const Experience = () => {
@@ -113,10 +112,11 @@ export const Experience = () => {
   );
 
   return (
-    <div id="experience_main_content" ref={experienceRef}>
-      <div id="experience_main">
-        <h2 id="experience_heading">Where I’ve Worked</h2>
-        <Tabs
+    <div id="experience_parent_conent"  ref={experienceRef}>
+      <div id="experience_main_content">
+        <div id="experience_main">
+          <h2 id="experience_heading">Where I’ve Worked</h2>
+          <Tabs
             className="tab_parent"
             tabPosition="left"
             items={experienceArr.map((company, i) => {
@@ -128,10 +128,7 @@ export const Experience = () => {
               };
             })}
           />
-      </div>
-      <div>
-        <div></div>
-        <div></div>
+        </div>
       </div>
     </div>
   );

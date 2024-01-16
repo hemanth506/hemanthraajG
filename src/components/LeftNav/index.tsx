@@ -18,7 +18,7 @@ export const LeftNav = () => {
       <div id="social-media-content">
         <div id="social-media-icons">
           {socialMediaLinks.map((media, index) => (
-            <a href={media.link} target="_blank" key={index} rel="noreferrer">
+            <a href={media.link} target="_blank" key={index} rel="noopener noreferrer">
               <img
                 src={media.src}
                 alt={`Social Media ${index}`}
