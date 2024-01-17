@@ -90,6 +90,7 @@ const Experience = () => {
                   className="companyLink"
                   href={company.content.link}
                   target="_blank"
+                  rel="noreferrer noopener"
                 >
                   {company.content.fullName}
                 </a>

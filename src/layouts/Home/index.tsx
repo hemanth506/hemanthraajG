@@ -7,9 +7,7 @@ import React, {
   useState,
 } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import { HomePage } from "../../pages/HomePage/index";
-import { NotFoundPage } from "../../pages/NotFoundPage/index";
-import { ArchievePage } from "../../pages/ArchievePage/index";
+// import { ArchievePage } from "../../pages/ArchievePage/index";
 import { Header } from "../../components/Header";
 import "./style.css";
 import { LeftNav } from "../../components/LeftNav";
@@ -18,6 +16,7 @@ import { MyContextProvider } from "../../Hooks/MyContext";
 import "./style.css";
 
 const HomePage = lazy(() => import("../../pages/HomePage/index"));
+const PageNotFound = lazy(() => import("../../pages/NotFoundPage"));
 
 export const Home: React.FC = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -90,8 +89,15 @@ export const Home: React.FC = () => {
                     </Suspense>
                   }
                 />
-                <Route path="/archive" element={<ArchievePage />} />
-                <Route path="/*" element={<NotFoundPage />} />
+                {/* <Route path="/archive" element={<ArchievePage />} /> */}
+                <Route
+                  path="/*"
+                  element={
+                    <Suspense fallback={<div id="loadingpage" />}>
+                      <PageNotFound />
+                    </Suspense>
+                  }
+                />
               </Routes>
             </section>
             <section id="right_nav_content">
