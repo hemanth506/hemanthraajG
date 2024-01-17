@@ -37,10 +37,10 @@ export const About = () => {
                 In my <span className="text_highlight">3+ years</span> of experience, I have learnt a bunch of technologies, like React.js,
                 Node.js, and Typescript, and I have started exploring React
                 Native gradually. I love solving DSA problems, and I've solved
-                more than <span className="text_highlight">400</span> of them on different platforms.
+                more than <span className="text_highlight">400</span> problems in various  platforms.
               </p>
               <p>
-                I have worked on Twilio for creating IVRs to provide Contact
+                I have experience in working on Twilio for creating IVRs to provide Contact
                 center solutions to the Customers. Recently I got a
                 chance to explore Generative AI tools from Google Cloud
                 and AWS which helps me understand the basics of AI.
