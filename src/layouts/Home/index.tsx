@@ -28,7 +28,7 @@ export const Home: React.FC = () => {
   const handleScroll = useCallback(() => {
     const currentScrollPos = window.scrollY;
     if (currentScrollPos < scrollPosition) {
-      console.log("Scrolling up!");
+      // console.log("Scrolling up!");
       setIsScrollingUp(true);
     } else {
       setIsScrollingUp(false);
@@ -38,10 +38,10 @@ export const Home: React.FC = () => {
 
   useEffect(() => {
     const headerElt = headerEltRef.current;
-    console.log("Effect event", isScrollingUp);
+    // console.log("Effect event", isScrollingUp);
     if (headerElt) {
       if (isScrollingUp) {
-        console.log("changing to fixed");
+        // console.log("changing to fixed");
         headerElt.style.position = "fixed";
       } else {
         headerElt.style.position = "relative";
@@ -62,7 +62,7 @@ export const Home: React.FC = () => {
         if (headerEltRef.current) {
           headerEltRef.current.style.position = "relative";
           setIsScrollingUp(true);
-          console.log("relative in the scrollToView", isScrollingUp);
+          // console.log("relative in the scrollToView", isScrollingUp);
         }
         currentRef.current.scrollIntoView({ behavior: "smooth" });
         window.location.hash = `#${section}`;
