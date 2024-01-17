@@ -139,7 +139,7 @@
 .project_outcome {
   display: flex;
   gap: 10px;
-  /* width: fit-content; */
+  height: 20px;
 }
 
 .project_outcome_rev {
