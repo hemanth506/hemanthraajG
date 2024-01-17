@@ -31,7 +31,7 @@ export const About = () => {
               <p>
                 Hello! My name is Hemanth and I enjoy creating things that live
                 on the internet. My interest in web development started back in
-                2019 when I was doing my final year project❤️.
+                2019 when I was doing my final year project <span className="heart">❤️</span>.
               </p>
               <p>
                 In my <span className="text_highlight">3+ years</span> of experience, I have learnt a bunch of technologies, like React.js,

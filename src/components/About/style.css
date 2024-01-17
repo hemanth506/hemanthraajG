@@ -50,8 +50,15 @@
 
 #about_section {
   width: 60%;
+  font-family: var(--font-sans);
+  line-height: 23px;
+  font-size: var(--fz-md);
+  color: var(--slate);
+  letter-spacing: 0.4px;
 }
-
+.heart {
+  color: var(--green);
+}
 #image_section {
   width: 40%;
   /* border: 1px solid; */
