@@ -1,6 +1,7 @@
 import React, { LegacyRef } from "react";
 import "./style.css";
 import { useMyContext } from "../../Hooks/MyContext";
+import resume from "../../assets/dummy.pdf"
 
 interface ChildComponentProps {
   controller: (currentRef: React.RefObject<HTMLElement>, section: string) => void;
@@ -32,7 +33,7 @@ export const Header: React.FC<ChildComponentProps> = ({ controller, headerEltRef
               ))}
             </div>
             <p id="head_resume">
-              <a href="#">Resume</a>
+              <a href={resume} target="__blank">Resume</a>
             </p>
           </div>
         </div>
