@@ -74,7 +74,7 @@ const experienceArr = [
   },
 ];
 
-export const Experience = () => {
+const Experience = () => {
   const { experienceRef } = useMyContext();
 
   const generateChildContent = (company: company) => {
@@ -133,3 +133,5 @@ export const Experience = () => {
     </div>
   );
 };
+
+export default Experience;

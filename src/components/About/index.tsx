@@ -3,7 +3,7 @@ import "./style.css";
 import Hemanth from "../../assets/ReadyPlayerMe-Avatar.png";
 import { useMyContext } from "../../Hooks/MyContext";
 
-export const About = () => {
+const About = () => {
   const { aboutRef } = useMyContext();
   const skillSet = [
     "JavaScript (ES6+)",
@@ -63,3 +63,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

@@ -117,7 +117,7 @@ const NOTE_WORTHY_PROJECTS = [
   },
 ];
 
-export const NoteWorthyProjects = () => {
+const NoteWorthyProjects = () => {
   const [paginationCount, setPaginationCount] = useState<number>(6);
   const [isShowMore, setIsShowMore] = useState<boolean>(true);
 
@@ -197,3 +197,5 @@ export const NoteWorthyProjects = () => {
     </div>
   );
 };
+
+export  default NoteWorthyProjects;

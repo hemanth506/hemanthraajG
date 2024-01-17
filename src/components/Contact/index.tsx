@@ -2,7 +2,7 @@ import React, { LegacyRef, MutableRefObject } from "react";
 import "./style.css";
 import { useMyContext } from "../../Hooks/MyContext";
 
-export const Contact: React.FC = () => {
+const Contact: React.FC = () => {
   const { contactRef } = useMyContext();
   return (
     <div id="contact_main_content" ref={contactRef}>
@@ -24,3 +24,5 @@ export const Contact: React.FC = () => {
     </div>
   );
 };
+
+export default Contact;

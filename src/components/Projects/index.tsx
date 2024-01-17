@@ -7,7 +7,7 @@ import Techsol from "../../assets/Techsol-HomePage.png";
 import Chatty from "../../assets/Chat-ty - Home.png";
 import { useMyContext } from "../../Hooks/MyContext";
 
-export const Projects = () => {
+const Projects = () => {
   const { workRef } = useMyContext();
   const projectsDetails = [
     {
@@ -136,3 +136,5 @@ export const Projects = () => {
     </div>
   );
 };
+
+export  default Projects;
