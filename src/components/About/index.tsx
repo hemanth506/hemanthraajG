@@ -2,25 +2,10 @@ import React from "react";
 import "./style.css";
 import Hemanth from "../../assets/ReadyPlayerMe-Avatar.png";
 import { useMyContext } from "../../Hooks/MyContext";
+import { aboutSkillSet } from "../../utils";
 
 const About = () => {
-  const { aboutRef } = useMyContext();
-  const skillSet = [
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React",
-    "Node.js",
-    "Twilio",
-    "GCP Generative AI",
-    "Docker",
-    "Java",
-    "PHP",
-    "Git",
-    "MongoDB",
-    "MySQL",
-    "Micro-services (Basics)",
-    "Micro-frontends (Basics)",
-  ];
+  const { aboutRef } = useMyContext();  
   return (
     <div id="about_me_main_content" ref={aboutRef}>
       <div id="about_me_main">
@@ -52,7 +37,7 @@ const About = () => {
               <div>
                 I have experience working with the following technologies:
                 <ul className="skillset">
-                  {skillSet.map((skill, index) => (
+                  {aboutSkillSet.map((skill, index) => (
                     <li key={index}>{skill}</li>
                   ))}
                 </ul>
