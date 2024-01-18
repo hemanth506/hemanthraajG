@@ -17,8 +17,9 @@ const Intro = () => {
       </div>
       <div id="about_description">
         <span>
-          I'm a Full-stack web developer and a Freelancer. I've been doing this for over three
-          years, and I enjoy creating websites and solving problems.
+          I'm a Full-stack web developer and a Freelancer with over three years
+          of experience. I enjoy creating websites, solving problems, and making
+          the internet a more interesting place.
         </span>
       </div>
     </div>

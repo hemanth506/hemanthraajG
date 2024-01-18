@@ -13,8 +13,8 @@ const About = () => {
     "Twilio",
     "GCP Generative AI",
     "Docker",
-    "Core Java",
-    "Core PHP",
+    "Java",
+    "PHP",
     "Git",
     "MongoDB",
     "MySQL",
@@ -29,24 +29,28 @@ const About = () => {
           <section id="about_section">
             <div>
               <p>
-                Hello! My name is Hemanth and I enjoy creating things that live
-                on the internet. My interest in web development started back in
-                2019 when I was doing my final year project <span className="heart">❤️</span>.
+                Hello! I'm Hemanth, and I enjoy creating things that live on the
+                internet. My interest in web development began in 2019 during my
+                final year project <span className="heart">❤️</span>.
               </p>
               <p>
-                In my <span className="text_highlight">3+ years</span> of experience, I have learnt a bunch of technologies, like React.js,
-                Node.js, and Typescript, and I have started exploring React
-                Native gradually. I love solving DSA problems, and I've solved
-                more than <span className="text_highlight">400</span> problems in various  platforms.
+                With over <span className="text_highlight">3 years</span> of
+                experience, I've delved into various technologies such as
+                React.js, Node.js, and Typescript. I've also started exploring
+                React Native gradually. Solving DSA problems is a passion of
+                mine, and I've successfully tackled over{" "}
+                <span className="text_highlight">400</span> problems across
+                various platforms.
               </p>
               <p>
-                I have experience in working on Twilio for creating IVRs to provide Contact
-                center solutions to the Customers. Recently I got a
-                chance to explore Generative AI tools from Google Cloud
-                and AWS which helps me understand the basics of AI.
+                I've applied my skills in working with Twilio to create IVRs for
+                Contact center solutions, providing enhanced customer
+                experiences. Recently, I had the opportunity to delve into
+                Generative AI tools from Google Cloud and AWS, which deepened my
+                understanding of the basics of AI.
               </p>
               <div>
-                Here are a few technologies I’ve been working with recently:
+                I have experience working with the following technologies:
                 <ul className="skillset">
                   {skillSet.map((skill, index) => (
                     <li key={index}>{skill}</li>
@@ -56,7 +60,11 @@ const About = () => {
             </div>
           </section>
           <section id="image_section">
-            <img src={Hemanth} alt="" width={380} id="image" />
+            {/* <div id="image_layer_1"> */}
+            {/* <div id="image_layer_2"> */}
+            <img src={Hemanth} alt="hemanth-avatar" id="image" />
+            {/* </div> */}
+            {/* </div> */}
           </section>
         </div>
       </div>
