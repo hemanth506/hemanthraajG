@@ -62,13 +62,39 @@ export const Header: React.FC<ChildComponentProps> = ({
               </a>
             </p>
           </div>
-          
+
           <div id="right_header_small">
-            <button id="menu__StyledHamburgerButton">
+            {/* <button id="menu__StyledHamburgerButton">
               <div id="header_hamburg">
                 <div id="header_inner_hamburg"></div>
               </div>
-            </button>
+            </button> */}
+
+            {/* <aside tabIndex={1} className="hamburTab">
+              <nav>
+                {headContentList.map((item) => (
+                  <p
+                    className="head_item"
+                    key={item.index}
+                    onClick={item.onClick}
+                  >
+                    <span className="head_num">{item.index}</span>
+                    <span className="head_title">{item.title}</span>
+                  </p>
+                ))}
+                <p id="head_resume">
+                  <a href={resume} target="__blank">
+                    Resume
+                  </a>
+                </p>
+              </nav>
+            </aside> */}
+
+            <p id="head_resume">
+              <a href={resume} target="__blank">
+                Resume
+              </a>
+            </p>
           </div>
         </div>
       </div>
