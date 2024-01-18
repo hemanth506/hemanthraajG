@@ -8,6 +8,11 @@
   display: flex;
   flex-direction: column;
   gap: 200px;
-  /* border: 1px solid red; */
   max-width: 1020px;
+}
+
+@media screen and (max-width: 768px){
+  #contents {
+    width: 82%;
+  }
 }

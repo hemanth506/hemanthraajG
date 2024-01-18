@@ -38,3 +38,9 @@
   transition-duration: 80ms;
   transition-timing-function: linear;
 }
+
+@media screen and (max-width: 768px) {
+  #email-main-content {
+    display: none;
+  }
+}

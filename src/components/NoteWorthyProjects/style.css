@@ -19,6 +19,39 @@
   gap: 12px;
 }
 
+@media screen and (min-width:860px) and (max-width: 1200px) {
+  #worthyProjects_view {
+    display: grid;
+    grid-template-columns: repeat(2, 327px);
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 859px) {
+  #worthyProjects_view {
+    display: grid;
+    /* grid-template-columns: repeat(1, 50vw); */
+    grid-template-columns: repeat(1, 327px);
+    gap: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #worthyProjects_header {
+    font-size: 5.5vw;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  #worthyProjects_view {
+    display: grid;
+    grid-template-columns: repeat(1, 88vw);
+    gap: 18px;
+  }
+}
+
+
+
 .worthyProject_inner {
   box-shadow: 0 10px 30px -15px var(--navy-shadow);
   display: flex;

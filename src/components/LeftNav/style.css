@@ -40,3 +40,10 @@
   transition-timing-function: linear;
   box-shadow: 3px 3px 3px 0px var(--green);
 }
+
+
+@media screen and (max-width: 768px) {
+  #social-media-main-content {
+    display: none;
+  }
+}

@@ -60,8 +60,6 @@ export const Home: React.FC = () => {
       if (currentRef.current) {
         if (headerEltRef.current) {
           headerEltRef.current.style.position = "relative";
-          setIsScrollingUp(true);
-          // console.log("relative in the scrollToView", isScrollingUp);
         }
         currentRef.current.scrollIntoView({ behavior: "smooth" });
         window.location.hash = `#${section}`;

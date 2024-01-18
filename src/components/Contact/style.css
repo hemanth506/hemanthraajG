@@ -15,6 +15,25 @@
   padding-top: 80px;
 }
 
+#contact_social_media_link_container {
+  display: none;
+}
+
+#contact_social_media_links {
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #contact_main {
+    width: 80%;
+  }
+
+  #contact_social_media_link_container {
+    display: block;
+  }
+}
+
 #contact_next {
   display: block;
   margin-bottom: 20px;
@@ -41,7 +60,6 @@
   font-weight: 500;
 }
 
-
 #contact_next::before {
   position: relative;
   bottom: 4px;
@@ -49,7 +67,7 @@
   margin-right: 10px;
   top: 0px;
   color: var(--green);
-  font-family: var(--font-mono); 
+  font-family: var(--font-mono);
   font-weight: 400;
 }
 

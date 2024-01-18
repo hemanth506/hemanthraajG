@@ -31,7 +31,8 @@
 }
 
 #about_description {
-  width: 550px;
+  width: 50vw;
+  max-width: 550px;
   font-family: var(--font-sans);
   margin: 28px 0px;
   color: var(--slate);

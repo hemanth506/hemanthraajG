@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { Tabs } from "antd";
 import { useMyContext } from "../../Hooks/MyContext";
@@ -76,6 +76,18 @@ const experienceArr = [
 
 const Experience = () => {
   const { experienceRef } = useMyContext();
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const updateScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', updateScreenWidth);
+    return () => {
+      window.removeEventListener('resize', updateScreenWidth);
+    };
+  }, []);
 
   const generateChildContent = (company: company) => {
     return (
@@ -119,7 +131,7 @@ const Experience = () => {
           <h2 id="experience_heading">Where I’ve Worked</h2>
           <Tabs
             className="tab_parent"
-            tabPosition="left"
+            tabPosition={screenWidth > 768 ?"left" : "top"}
             items={experienceArr.map((company, i) => {
               const id = String(i);
               return {
