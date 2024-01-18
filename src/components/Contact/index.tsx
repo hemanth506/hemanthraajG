@@ -11,9 +11,10 @@ const Contact: React.FC = () => {
         <span id="contact_next">What’s Next?</span>
         <h2 id="contact_intouch">Get In Touch</h2>
         <span id="contact_brief">
-          Although I’m not currently looking for any new opportunities, my inbox
-          is always open. Whether you have a question or just want to say hi,
-          I’ll try my best to get back to you!
+          I'm open to new opportunities, and my inbox is always available for
+          professional discussions or casual hellos. I'll do my best to respond
+          promptly, whether it's about potential opportunities or simply a
+          friendly chat.
         </span>
         <p id="contact_hello">
           <a href="mailto:hemanthraaj31@gmail.com">Say Hello</a>
