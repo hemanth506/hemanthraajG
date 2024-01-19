@@ -5,7 +5,7 @@ import { useMyContext } from "../../Hooks/MyContext";
 import { aboutSkillSet } from "../../utils";
 
 const About = () => {
-  const { aboutRef } = useMyContext();  
+  const { aboutRef } = useMyContext();
   return (
     <div id="about_me_main_content" ref={aboutRef}>
       <div id="about_me_main">
@@ -24,8 +24,13 @@ const About = () => {
                 React.js, Node.js, and Typescript. I've also started exploring
                 React Native gradually. Solving DSA problems is a passion of
                 mine, and I've successfully tackled over{" "}
-                <span className="text_highlight">400</span> problems across
-                various platforms.
+                <a
+                  href="https://www.scaler.com/academy/profile/c9461cf63915"
+                  target="__blank"
+                >
+                  <span className="text_highlight">400</span>
+                </a>{" "}
+                problems across various platforms.
               </p>
               <p>
                 I've applied my skills in working with Twilio to create IVRs for
