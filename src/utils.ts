@@ -8,7 +8,7 @@ import FlexO from "./assets/FlexO.png";
 import Techsol from "./assets/Techsol-HomePage.png";
 import Chatty from "./assets/Chat-ty-Home.png";
 
-export const myPhoneNumber:string = "+919963644103";
+export const myPhoneNumber:string = "+919962644103";
 
 export const myEmailId:string = "hemanthraaj31@gmail.com";
 
