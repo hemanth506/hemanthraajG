@@ -34,7 +34,7 @@ export const aboutSkillSet = [
   "Git",
   "MongoDB",
   "MySQL",
-  "Micro-services (Basics)",
+  "Micro-services",
   "Micro-frontends (Basics)",
 ];
 
