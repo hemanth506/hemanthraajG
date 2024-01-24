@@ -26,6 +26,7 @@ export const aboutSkillSet = [
   "TypeScript",
   "React",
   "Node.js",
+  "Data Structures",
   "Twilio",
   "GCP Generative AI",
   "Docker",
@@ -64,7 +65,8 @@ export const experienceArr = [
       duration: "Oct 2021 - July 2022 | July 2023 - Present",
       description: [
         "Worked for a small startup company on website development using PHP, HTML, CSS, JavaScript, JQuery, and SQL database.",
-        "Develop several e-commerce websites tailored to client specifications using the MERN Stack. Currently, the primary focus is on constructing a mobile application using React Native for the purpose of organizing tournament events.",
+        "Develop several e-commerce websites tailored to client specifications using the MERN Stack.",
+        "Currently working on a mobile application that uses React Native to organize tournament events."
       ],
       technologies: [],
     },
