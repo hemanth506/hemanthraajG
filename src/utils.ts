@@ -44,7 +44,7 @@ export const experienceArr = [
     name: "Factana",
     role: "Full-stack Web Developer",
     content: {
-      fullName: "Factana Solution Pvt Ltd",
+      fullName: "Factana Computing Pvt Ltd",
       link: "https://www.factana.com",
       duration: "Oct 2021 - Present",
       description: [
@@ -75,7 +75,7 @@ export const experienceArr = [
     name: "Prviga",
     role: "Software developer",
     content: {
-      fullName: "Prviga Solution Ltd",
+      fullName: "Prviga Solution Pvt Ltd",
       link: "https://prviga.com",
       duration: "July 2020 - Sept 2021",
       description: [
