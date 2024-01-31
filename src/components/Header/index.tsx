@@ -1,7 +1,7 @@
 import React, { LegacyRef } from "react";
 import "./style.css";
 import { useMyContext } from "../../Hooks/MyContext";
-import resume from "../../assets/Hemanth-Raaj-2024.pdf";
+import resume from "../../assets/Hemanth Raaj - 2024.pdf";
 
 interface ChildComponentProps {
   controller: (
