@@ -57,10 +57,10 @@ export const experienceArr = [
       link: "https://www.factana.com",
       duration: "Oct 2021 - Present",
       description: [
-        "Built serverless proxy APIs which acts as a middleware for client's API and Twilio IVR.",
-        "Developed backend service for each client's program using Node.js and converted as microservices which is deployed in different ports and made it work independently.",
+        "Built serverless proxy APIs that act as middleware for the client's API and Twilio IVR.",
+        "Developed backend service for each client's program using Node.js and converted to microservices deployed in different ports and made it work independently.",
         "Implemented and maintained PCI compliance measures for the organization, ensuring adherence to security protocols and regulatory requirements.",
-        "Developed custom React plugins in the agent facing interface of Twilio which helped to track call of the customers.",
+        "Developed custom React plugins in the agent-facing interface of Twilio which helped to track calls of the customers.",
       ],
       technologies: [
         "React.js",
@@ -94,8 +94,8 @@ export const experienceArr = [
       duration: "July 2020 - Sept 2021",
       description: [
         "Wrote server-side and client-side code for a product named 'Widuni' using PHP, HTML, CSS, JavaScript, JQuery, and MySQL.",
-        "Handled forms and data reports in various aspects of client requirements using the D3.js for graphical representation.",
-        "Worked on client's project in building e-commerce website using Node and React using React class based components",
+        "Handled forms and data reports in various aspects of client requirements using D3.js for graphical representation.",
+        "Worked on a client's project in building an e-commerce website using Node/Express and React using React class-based components.",
       ],
       technologies: [
         "PHP",
