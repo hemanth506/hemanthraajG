@@ -6,8 +6,7 @@ const Intro = () => {
     <div id="about_main_content">
       <div id="about_intro_content">
         <div className="about_introduction">
-          <span id="about_intro">Hi👋, my name is</span>
-          {/* <span id="about_intro">Hi, my name is</span> */}
+          <span id="about_intro">{infoDetails.greetings}</span>
         </div>
         <div className="about_introduction">
           <h2 id="about_name">{infoDetails.name}</h2>

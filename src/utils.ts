@@ -263,6 +263,7 @@ export const projectsDetails = [
 ];
 
 export const infoDetails = {
+  greetings: "Hi👋, my name is",
   name: "Hemanth Raaj G.",
   briefMe: "I build things for the web.",
   describeMe:
