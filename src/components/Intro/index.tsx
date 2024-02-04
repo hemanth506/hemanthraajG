@@ -1,4 +1,4 @@
-import React from "react";
+import { infoDetails } from "../../utils";
 import "./style.css";
 
 const Intro = () => {
@@ -6,20 +6,19 @@ const Intro = () => {
     <div id="about_main_content">
       <div id="about_intro_content">
         <div className="about_introduction">
-          <span id="about_intro">Hi, my name is</span>
+          <span id="about_intro">Hi👋, my name is</span>
+          {/* <span id="about_intro">Hi, my name is</span> */}
         </div>
         <div className="about_introduction">
-          <h2 id="about_name">Hemanth Raaj G.</h2>
+          <h2 id="about_name">{infoDetails.name}</h2>
         </div>
         <div>
-          <h2 id="about_brief">I build things for the web.</h2>
+          <h2 id="about_brief">{infoDetails.briefMe}</h2>
         </div>
       </div>
       <div id="about_description">
         <span>
-          I'm a Full-stack web developer and a Freelancer with over three years
-          of experience. I enjoy creating websites, solving problems, and making
-          the internet a more interesting place.
+        {infoDetails.describeMe}
         </span>
       </div>
     </div>

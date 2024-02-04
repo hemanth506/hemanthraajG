@@ -13,9 +13,21 @@ export const myEmailId: string = "hemanthraaj31@gmail.com";
 
 export const socialMediaLinks = [
   { src: github, className: "github", link: "https://github.com/hemanth506" },
-  { src: leetcode, className: "leetcode", link: "https://leetcode.com/hemanthraaj31" },
-  { src: linkedIn, className: "linkedIn", link: "https://www.linkedin.com/in/hemanthraaj31" },
-  { src: scaler, className: "scaler", link: "https://www.scaler.com/academy/profile/c9461cf63915" },
+  {
+    src: leetcode,
+    className: "leetcode",
+    link: "https://leetcode.com/hemanthraaj31",
+  },
+  {
+    src: linkedIn,
+    className: "linkedIn",
+    link: "https://www.linkedin.com/in/hemanthraaj31",
+  },
+  {
+    src: scaler,
+    className: "scaler",
+    link: "https://www.scaler.com/academy/profile/c9461cf63915",
+  },
   { src: telephone, className: "telephone", link: `tel://${myPhoneNumber}` },
 ];
 
@@ -50,7 +62,13 @@ export const experienceArr = [
         "Implemented and maintained PCI compliance measures for the organization, ensuring adherence to security protocols and regulatory requirements.",
         "Developed custom React plugins in the agent facing interface of Twilio which helped to track call of the customers.",
       ],
-      technologies: ["React.js", "Node.js", "Twilio serverless", "AWS lambda", "AWS Connect"],
+      technologies: [
+        "React.js",
+        "Node.js",
+        "Twilio serverless",
+        "AWS lambda",
+        "AWS Connect",
+      ],
     },
   },
   // {
@@ -243,3 +261,30 @@ export const projectsDetails = [
     },
   },
 ];
+
+export const infoDetails = {
+  name: "Hemanth Raaj G.",
+  briefMe: "I build things for the web.",
+  describeMe:
+    "I'm a Full-stack web developer with over three years of experience. I enjoy creating websites, solving problems, and making the internet a more interesting place.",
+};
+
+export const contactMeDetails = {
+  brief:
+    "I'm open to new opportunities, and my inbox is always available for professional discussions or casual hellos. I'll do my best to respond promptly, whether it's about potential opportunities or simply a friendly chat.",
+  sayHello: "Say Hello",
+    builtBy: "Built by Hemanth Raaj @ 2023 💗"
+};
+
+export const aboutDetails = {
+  para1: "Hello! I'm Hemanth, and I enjoy creating things that live on the internet. My interest in web development began since 2019 ",
+  para2: {
+    content1: "With over",
+    content2: "3 years",
+    content3: "of experience, I've delved into various technologies such as React.js, Node.js, and Typescript. I've also started exploring React Native gradually. Solving DSA problems is a passion of mine, and I've successfully tackled over",
+    content4: "400",
+    content5: "problems across various platforms."
+  },
+  para3: "I've applied my skills in working with Twilio to create IVRs for Contact center solutions, providing enhanced customer experiences. Recently, I had the opportunity to delve into Generative AI tools from Google Cloud and AWS, which deepened my understanding of the basics of AI.",
+  para4: "I have experience working with the following technologies"
+}

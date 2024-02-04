@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import Hemanth from "../../assets/ReadyPlayerMe-Avatar.png";
 import { useMyContext } from "../../Hooks/MyContext";
-import { aboutSkillSet } from "../../utils";
+import { aboutDetails, aboutSkillSet } from "../../utils";
 
 const About = () => {
   const { aboutRef } = useMyContext();
@@ -14,33 +14,30 @@ const About = () => {
           <section id="about_section">
             <div>
               <p>
-                Hello! I'm Hemanth, and I enjoy creating things that live on the
-                internet. My interest in web development began in 2019 during my
-                final year project <span className="heart">❤️</span>.
+                {aboutDetails.para1}
+                <span className="heart">❤️</span>.
               </p>
               <p>
-                With over <span className="text_highlight">3 years</span> of
-                experience, I've delved into various technologies such as
-                React.js, Node.js, and Typescript. I've also started exploring
-                React Native gradually. Solving DSA problems is a passion of
-                mine, and I've successfully tackled over{" "}
+                {aboutDetails.para2.content1}{" "}
+                <span className="text_highlight">
+                  {aboutDetails.para2.content2}
+                </span>{" "}
+                {aboutDetails.para2.content3}{" "}
                 <a
                   href="https://www.scaler.com/academy/profile/c9461cf63915"
                   target="__blank"
                 >
-                  <span className="text_highlight">400</span>
+                  <span className="text_highlight">
+                    {aboutDetails.para2.content4}
+                  </span>
                 </a>{" "}
-                problems across various platforms.
+                {aboutDetails.para2.content5}
               </p>
               <p>
-                I've applied my skills in working with Twilio to create IVRs for
-                Contact center solutions, providing enhanced customer
-                experiences. Recently, I had the opportunity to delve into
-                Generative AI tools from Google Cloud and AWS, which deepened my
-                understanding of the basics of AI.
+                {aboutDetails.para3}
               </p>
               <div>
-                I have experience working with the following technologies:
+                {aboutDetails.para4}:
                 <ul className="skillset">
                   {aboutSkillSet.map((skill, index) => (
                     <li key={index}>{skill}</li>
