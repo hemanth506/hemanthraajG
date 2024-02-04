@@ -14,7 +14,7 @@ export const myEmailId: string = "hemanthraaj31@gmail.com";
 export const socialMediaLinks = [
   { src: github, className: "github", link: "https://github.com/hemanth506" },
   { src: leetcode, className: "leetcode", link: "https://leetcode.com/hemanthraaj31" },
-  { src: linkedIn, className: "linkedIn", link: "https://www.linkedin.com/in/hemanth-raaj-g" },
+  { src: linkedIn, className: "linkedIn", link: "https://www.linkedin.com/in/hemanthraaj31" },
   { src: scaler, className: "scaler", link: "https://www.scaler.com/academy/profile/c9461cf63915" },
   { src: telephone, className: "telephone", link: `tel://${myPhoneNumber}` },
 ];
