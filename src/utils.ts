@@ -1,24 +1,22 @@
 import github from "./assets/github.svg";
 import leetcode from "./assets/leetcode.svg";
 import linkedIn from "./assets/linkedIn.svg";
-import instagram from "./assets/instagram.svg";
 import telephone from "./assets/telephone.svg";
 import scaler from "./assets/scaler.svg";
 import FlexO from "./assets/FlexO.png";
 import Techsol from "./assets/Techsol-HomePage.png";
 import Chatty from "./assets/Chat-ty-Home.png";
 
-export const myPhoneNumber:string = "+919962644103";
+export const myPhoneNumber: string = "+919962644103";
 
-export const myEmailId:string = "hemanthraaj31@gmail.com";
+export const myEmailId: string = "hemanthraaj31@gmail.com";
 
 export const socialMediaLinks = [
   { src: github, className: "github", link: "https://github.com/hemanth506" },
   { src: leetcode, className: "leetcode", link: "https://leetcode.com/hemanthraaj31" },
   { src: linkedIn, className: "linkedIn", link: "https://www.linkedin.com/in/hemanth-raaj-g" },
-  // { src: instagram, className: "instagram", link: "https://www.instagram.com/hemanthraaj31" },
-  {src: scaler, className: "scaler", link: "https://www.scaler.com/academy/profile/c9461cf63915"},
-  {src: telephone, className: "telephone", link: `tel://${myPhoneNumber}`},
+  { src: scaler, className: "scaler", link: "https://www.scaler.com/academy/profile/c9461cf63915" },
+  { src: telephone, className: "telephone", link: `tel://${myPhoneNumber}` },
 ];
 
 export const aboutSkillSet = [
@@ -36,7 +34,6 @@ export const aboutSkillSet = [
   "MongoDB",
   "MySQL",
   "Micro-services",
-  "Micro-frontends (Basics)",
 ];
 
 export const experienceArr = [
@@ -48,29 +45,28 @@ export const experienceArr = [
       link: "https://www.factana.com",
       duration: "Oct 2021 - Present",
       description: [
-        "Proficient in working with client APIs to facilitate seamless integration between applications and services.",
-        "Built serverless APIs and IVR flows using an Interactive voice response platform - Twilio.",
-        "Successfully managed multiple client accounts concurrently, effectively balancing competing priorities and meeting deadlines.",
+        "Built serverless proxy APIs which acts as a middleware for client's API and Twilio IVR.",
+        "Developed backend service for each client's program using Node.js and converted as microservices which is deployed in different ports and made it work independently.",
         "Implemented and maintained PCI compliance measures for the organization, ensuring adherence to security protocols and regulatory requirements.",
+        "Developed custom React plugins in the agent facing interface of Twilio which helped to track call of the customers.",
       ],
-      technologies: [""],
+      technologies: ["React.js", "Node.js", "Twilio serverless", "AWS lambda", "AWS Connect"],
     },
   },
-  {
-    name: "FreeLancing",
-    role: "Full-stack Web Developer - MERN",
-    content: {
-      fullName: "",
-      link: "",
-      duration: "Oct 2021 - July 2022 | July 2023 - Present",
-      description: [
-        "Worked for a small startup company on website development using PHP, HTML, CSS, JavaScript, JQuery, and SQL database.",
-        "Develop several e-commerce websites tailored to client specifications using the MERN Stack.",
-        "Currently working on a mobile application that uses React Native to organize tournament events."
-      ],
-      technologies: [],
-    },
-  },
+  // {
+  //   name: "FreeLancing",
+  //   role: "Full-stack Web Developer - MERN",
+  //   content: {
+  //     fullName: "",
+  //     link: "",
+  //     duration: "Oct 2021 - July 2022 | July 2023 - Present",
+  //     description: [
+  //       "Worked for a small startup company on website development using PHP, HTML, CSS, JavaScript, JQuery, and SQL database.",
+  //       "Develop several e-commerce websites tailored to client specifications using the MERN Stack.",
+  //     ],
+  //     technologies: [],
+  //   },
+  // },
   {
     name: "Prviga",
     role: "Software developer",
@@ -79,18 +75,18 @@ export const experienceArr = [
       link: "https://prviga.com",
       duration: "July 2020 - Sept 2021",
       description: [
-        "Wrote server-side and client-side code for a product named 'Widuni' using Node.js, Express.js, PHP, Java, HTML, CSS, JavaScript, JQuery, MongoDB, and SQL database.",
-        "Handled forms and data reports in various aspects of client requirements using the D3.js framework for graphical representation.",
-        "Performed software demonstrations for potential clients, highlighting strengths of Product and Service.",
+        "Wrote server-side and client-side code for a product named 'Widuni' using PHP, HTML, CSS, JavaScript, JQuery, and MySQL.",
+        "Handled forms and data reports in various aspects of client requirements using the D3.js for graphical representation.",
+        "Worked on client's project in building e-commerce website using Node and React using React class based components",
       ],
       technologies: [
         "PHP",
+        "Javascript",
         "Node.js",
         "React.js",
         "D3.js",
         "MySQL",
         "MongoDB",
-        "Javascript",
         "Jquery",
         "HTML",
         "CSS",
