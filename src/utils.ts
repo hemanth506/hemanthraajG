@@ -50,12 +50,29 @@ export const aboutSkillSet = [
 
 export const experienceArr = [
   {
+    name: "Pluralsight",
+    role: "Full-stack Web Developer",
+    content: {
+      fullName: "Pluralsight India Pvt Ltd",
+      link: "https://www.pluralsight.com/",
+      duration: "June 2024 - Present",
+      description: [
+        "WIP",
+      ],
+      technologies: [
+        "React.js",
+        "Node.js",
+        "PostgreSQL"
+      ],
+    },
+  },
+  {
     name: "Factana",
     role: "Full-stack Web Developer",
     content: {
       fullName: "Factana Computing Pvt Ltd",
       link: "https://www.factana.com",
-      duration: "Oct 2021 - Present",
+      duration: "Oct 2021 - June 2024",
       description: [
         "Built serverless proxy APIs that act as middleware for the client's API and Twilio IVR.",
         "Developed backend service for each client's program using Node.js and converted to microservices deployed in different ports and made it work independently.",
