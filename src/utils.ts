@@ -284,7 +284,7 @@ export const infoDetails = {
   name: "Hemanth Raaj G.",
   briefMe: "I build things for the web.",
   describeMe:
-    "I'm a Full-stack web developer with over three years of experience. I enjoy creating websites, solving problems, and making the internet a more interesting place.",
+    "I'm a Full-stack web developer with over four years of experience. I enjoy creating websites, solving problems, and making the internet a more interesting place.",
 };
 
 export const contactMeDetails = {
@@ -298,7 +298,7 @@ export const aboutDetails = {
   para1: "Hello! I'm Hemanth, and I enjoy creating things that live on the internet. My interest in web development began since 2019 ",
   para2: {
     content1: "With over",
-    content2: "3 years",
+    content2: "4 years",
     content3: "of experience, I've delved into various technologies such as React.js, Node.js, and Typescript. I've also started exploring React Native gradually. Solving DSA problems is a passion of mine, and I've successfully tackled over",
     content4: "400",
     content5: "problems across various platforms."
