@@ -56,14 +56,8 @@ export const experienceArr = [
       fullName: "Pluralsight India Pvt Ltd",
       link: "https://www.pluralsight.com/",
       duration: "June 2024 - Present",
-      description: [
-        "WIP",
-      ],
-      technologies: [
-        "React.js",
-        "Node.js",
-        "PostgreSQL"
-      ],
+      description: ["WIP"],
+      technologies: ["React.js", "Node.js", "PostgreSQL"],
     },
   },
   {
@@ -131,6 +125,16 @@ export const experienceArr = [
 ];
 
 export const noteWorthyProjectsArr = [
+  {
+    title: "Discus-lib",
+    description:
+      "A ready-to-use React NPM component that seamlessly integrates customizable user comments into your application. Save time and enhance interaction without the hassle of building your own solution!",
+    links: {
+      github: "https://github.com/hemanth506/discus-lib",
+      externalLink: "https://www.npmjs.com/package/discus-lib",
+    },
+    tools: ["React", "react-library"],
+  },
   {
     title: "Organize Me",
     description:
@@ -291,18 +295,21 @@ export const contactMeDetails = {
   brief:
     "I'm open to new opportunities, and my inbox is always available for professional discussions or casual hellos. I'll do my best to respond promptly, whether it's about potential opportunities or simply a friendly chat.",
   sayHello: "Say Hello",
-    builtBy: "Built by Hemanth Raaj @ 2023 💗"
+  builtBy: "Built by Hemanth Raaj @ 2023 💗",
 };
 
 export const aboutDetails = {
-  para1: "Hello! I'm Hemanth, and I enjoy creating things that live on the internet. My interest in web development began since 2019 ",
+  para1:
+    "Hello! I'm Hemanth, and I enjoy creating things that live on the internet. My interest in web development began since 2019 ",
   para2: {
     content1: "With over",
     content2: "4 years",
-    content3: "of experience, I've delved into various technologies such as React.js, Node.js, and Typescript. I've also started exploring React Native gradually. Solving DSA problems is a passion of mine, and I've successfully tackled over",
+    content3:
+      "of experience, I've delved into various technologies such as React.js, Node.js, and Typescript. I've also started exploring React Native gradually. Solving DSA problems is a passion of mine, and I've successfully tackled over",
     content4: "400",
-    content5: "problems across various platforms."
+    content5: "problems across various platforms.",
   },
-  para3: "I've applied my skills in working with Twilio to create IVRs for Contact center solutions, providing enhanced customer experiences. Recently, I had the opportunity to delve into Generative AI tools from Google Cloud and AWS, which deepened my understanding of the basics of AI.",
-  para4: "I have experience working with the following technologies"
-}
+  para3:
+    "I've applied my skills in working with Twilio to create IVRs for Contact center solutions, providing enhanced customer experiences. Recently, I had the opportunity to delve into Generative AI tools from Google Cloud and AWS, which deepened my understanding of the basics of AI.",
+  para4: "I have experience working with the following technologies",
+};
