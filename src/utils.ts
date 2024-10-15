@@ -133,7 +133,7 @@ export const noteWorthyProjectsArr = [
       github: "https://github.com/hemanth506/discus-lib",
       externalLink: "https://www.npmjs.com/package/discus-lib",
     },
-    tools: ["React", "react-library"],
+    tools: ["React", "NPM package"],
   },
   {
     title: "Organize Me",
