@@ -128,12 +128,12 @@ export const noteWorthyProjectsArr = [
   {
     title: "Discus-lib",
     description:
-      "A ready-to-use React NPM component that seamlessly integrates customizable user comments into your application.",
+      "A ready-to-use React NPM package that seamlessly integrates customizable user comments into your application.",
     links: {
       github: "https://github.com/hemanth506/discus-lib",
       externalLink: "https://www.npmjs.com/package/discus-lib",
     },
-    tools: ["React", "NPM package"],
+    tools: ["React", "NPM Package"],
   },
   {
     title: "Organize Me",
