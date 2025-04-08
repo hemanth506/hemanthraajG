@@ -32,7 +32,6 @@ export const socialMediaLinks = [
 ];
 
 export const aboutSkillSet = [
-  "JavaScript (ES6+)",
   "TypeScript",
   "React",
   "Node.js",
@@ -45,7 +44,10 @@ export const aboutSkillSet = [
   "Git",
   "MongoDB",
   "MySQL",
+  "Postgres",
   "Micro-services",
+  "AWS",
+  "CI/CD"
 ];
 
 export const experienceArr = [

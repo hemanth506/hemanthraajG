@@ -51,6 +51,10 @@ h2 {
   line-height: 1.1;
 }
 
+body {
+  background-color: var(--navy);
+}
+
 body::-webkit-scrollbar {
   width: 6px;
   background-color: var(--navy);
