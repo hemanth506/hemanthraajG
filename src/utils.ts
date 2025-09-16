@@ -6,6 +6,9 @@ import scaler from "./assets/scaler.svg";
 import FlexO from "./assets/FlexO.png";
 import Techsol from "./assets/Techsol-HomePage.png";
 import Chatty from "./assets/Chat-ty-Home.png";
+import { toWords } from "number-to-words"
+
+const CAREER_START_DATE = '2020-07-01'
 
 export const myPhoneNumber: string = "+919962644103";
 
@@ -53,7 +56,7 @@ export const aboutSkillSet = [
 export const experienceArr = [
   {
     name: "Pluralsight",
-    role: "Full-stack Web Developer",
+    role: "SDE - II",
     content: {
       fullName: "Pluralsight India Pvt Ltd",
       link: "https://www.pluralsight.com/",
@@ -64,7 +67,7 @@ export const experienceArr = [
   },
   {
     name: "Factana",
-    role: "Full-stack Web Developer",
+    role: "Full-stack Developer",
     content: {
       fullName: "Factana Computing Pvt Ltd",
       link: "https://www.factana.com",
@@ -86,7 +89,7 @@ export const experienceArr = [
   },
   // {
   //   name: "FreeLancing",
-  //   role: "Full-stack Web Developer - MERN",
+  //   role: "Full-stack Developer - MERN",
   //   content: {
   //     fullName: "",
   //     link: "",
@@ -285,12 +288,43 @@ export const projectsDetails = [
   },
 ];
 
+function getExperienceDescription() {
+  try {
+    const now = new Date();
+    const start = new Date(CAREER_START_DATE);
+    let years = now.getFullYear() - start.getFullYear();
+    let months = now.getMonth() - start.getMonth();
+    let phrase, yearOfExp
+
+    if (months >= 6) {
+      phrase = 'nearly'
+      yearOfExp = years + 1
+    } else {
+      phrase = 'over'
+      yearOfExp = years
+    }
+
+    return {
+      phrase,
+      yearOfExp
+    }
+  } catch (err) {
+    return {
+      phrase: 'over',
+      yearOfExp: 5
+    }
+  }
+}
+
+const yearOfExperience = getExperienceDescription();
+const phrase = yearOfExperience.phrase + ' ' + toWords(yearOfExperience.yearOfExp)
+
 export const infoDetails = {
   greetings: "Hi, my name is",
   name: "Hemanth Raaj G.",
   briefMe: "I build things for the web.",
   describeMe:
-    "I'm a Full-stack web developer with over four years of experience. I enjoy creating websites, solving problems, and making the internet a more interesting place.",
+    `I'm a Full-stack developer with ${phrase} years of experience. I enjoy creating websites, solving problems, and making the internet a more interesting place.`,
 };
 
 export const contactMeDetails = {
@@ -304,8 +338,8 @@ export const aboutDetails = {
   para1:
     "Hello! I'm Hemanth, and I enjoy creating things that live on the internet. My interest in web development began since 2019 ",
   para2: {
-    content1: "With over",
-    content2: "4 years",
+    content1: `With ${yearOfExperience.phrase}`,
+    content2: `${yearOfExperience.yearOfExp} years`,
     content3:
       "of experience, I've delved into various technologies such as React.js, Node.js, and Typescript. I've also started exploring React Native gradually. Solving DSA problems is a passion of mine, and I've successfully tackled over",
     content4: "400",
