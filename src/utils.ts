@@ -316,7 +316,7 @@ function getExperience() {
   }
 }
 
-const yearOfExperience = getExperienceDescription();
+const yearOfExperience = getExperience();
 const phrase = yearOfExperience.phrase + ' ' + toWords(yearOfExperience.yearOfExp)
 
 export const infoDetails = {
