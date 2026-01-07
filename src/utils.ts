@@ -288,31 +288,31 @@ export const projectsDetails = [
   },
 ];
 
-function getExperienceDescription() {
-  try {
-    const now = new Date();
-    const start = new Date(CAREER_START_DATE);
-    let years = now.getFullYear() - start.getFullYear();
-    let months = now.getMonth() - start.getMonth();
-    let phrase, yearOfExp
+function getExperience() {
+  const now = new Date()
+  const start = new Date(CAREER_START_DATE)
 
-    if (months >= 6) {
-      phrase = 'nearly'
-      yearOfExp = years + 1
-    } else {
-      phrase = 'over'
-      yearOfExp = years
-    }
+  let years = now.getFullYear() - start.getFullYear()
+  let months = now.getMonth() - start.getMonth()
 
-    return {
-      phrase,
-      yearOfExp
-    }
-  } catch (err) {
-    return {
-      phrase: 'over',
-      yearOfExp: 5
-    }
+  if (months < 0 || (months === 0 && now.getDate() < start.getDate())) {
+    years--
+    months += 12
+  }
+
+  let phrase, yearOfExp
+
+  if (months >= 8) {
+    phrase = 'nearly'
+    yearOfExp = years + 1
+  } else {
+    phrase = 'over'
+    yearOfExp = years
+  }
+
+  return {
+    phrase,
+    yearOfExp
   }
 }
 
