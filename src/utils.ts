@@ -59,12 +59,7 @@ export const aboutSkillSet = [
   "Snowflake",
   "Generative AI",
 ];
-/*
-• Optimized critical SQL queries, achieving an 80% reduction in API latency and saving ~$80K/month by identifying the anomalies in the platform.  
-• Architected Kafka and RabbitMQ producers/consumers for scalable microservice communication.  
-• Played a pivotal role in migrating a production service from .NET to Node.js, enhancing maintainability.  
-• Designed a reusable state-management abstraction, streamlining complex transitions across components.
-*/
+
 export const experienceArr = [
   {
     name: "Pluralsight",
@@ -338,7 +333,7 @@ const phrase = yearOfExperience.phrase + ' ' + toWords(yearOfExperience.yearOfEx
 export const infoDetails = {
   greetings: "Hi, my name is",
   name: "Hemanth Raaj G.",
-  briefMe: "I develop high-scale systems",
+  briefMe: "I build systems that scale.",
   describeMe:
     `I'm a Senior Software Engineer with ${phrase} years of experience building high-performance full-stack and backend systems. I enjoy solving complex problems, designing reliable distributed services, and turning ideas into scalable, production-ready software.`,
 };
