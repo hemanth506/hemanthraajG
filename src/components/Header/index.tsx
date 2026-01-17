@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { LegacyRef } from "react";
 import "./style.css";
 import { useMyContext } from "../../Hooks/MyContext";
@@ -57,7 +58,7 @@ export const Header: React.FC<ChildComponentProps> = ({
               ))}
             </div>
             <p id="head_resume">
-              <a href={resume} target="__blank">
+              <a href={resume} target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </p>
@@ -91,7 +92,7 @@ export const Header: React.FC<ChildComponentProps> = ({
             </aside> */}
 
             <p id="head_resume">
-              <a href={resume} target="__blank">
+              <a href={resume} target="_blank" rel="noopener noreferrer">
                 Resume
               </a>
             </p>
