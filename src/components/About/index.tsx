@@ -14,30 +14,30 @@ const About = () => {
           <section id="about_section">
             <div>
               <p>
-                {aboutDetails.para1}
-                <span className="heart">❤️</span>.
+                {aboutDetails.para1.content1}
+                <span className="text_highlight">
+                  {aboutDetails.para1.content2}
+                </span>{" "}
+                {aboutDetails.para1.content3} <span className="heart">❤️</span>
               </p>
               <p>
-                {aboutDetails.para2.content1}{" "}
-                <span className="text_highlight">
-                  {aboutDetails.para2.content2}
-                </span>{" "}
-                {aboutDetails.para2.content3}{" "}
+                {aboutDetails.para2}
+              </p>
+              <p>{aboutDetails.para3}</p>
+              <p>
+                {aboutDetails.para4.content1}{" "}
                 <a
-                  href="https://www.scaler.com/academy/profile/c9461cf63915"
+                  href="https://leetcode.com/u/hemanthraaj31/"
                   target="__blank"
                 >
                   <span className="text_highlight">
-                    {aboutDetails.para2.content4}
+                    {aboutDetails.para4.content2}
                   </span>
                 </a>{" "}
-                {aboutDetails.para2.content5}
-              </p>
-              <p>
-                {aboutDetails.para3}
+                {aboutDetails.para4.content3}{" "}
               </p>
               <div>
-                {aboutDetails.para4}:
+                {aboutDetails.para5}
                 <ul className="skillset">
                   {aboutSkillSet.map((skill, index) => (
                     <li key={index}>{skill}</li>

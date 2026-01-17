@@ -35,24 +35,36 @@ export const socialMediaLinks = [
 ];
 
 export const aboutSkillSet = [
+  "Javascript",
   "TypeScript",
+  "Core-Java",
+  "PHP",
   "React",
   "Node.js",
-  "Data Structures",
-  "Twilio",
-  "GCP Generative AI",
-  "Docker",
-  "Java",
-  "PHP",
-  "Git",
+  "System design",
+  "Data Structures & Algorithms",
+  "Microservices Architecture",
+  "Kafka",
+  "RabbitMQ",
   "MongoDB",
   "MySQL",
   "Postgres",
-  "Micro-services",
+  "GraphQL",
   "AWS",
-  "CI/CD"
+  "Docker",
+  "CI/CD",
+  "Git",
+  "Twilio",
+  "Grafana",
+  "Snowflake",
+  "Generative AI",
 ];
-
+/*
+• Optimized critical SQL queries, achieving an 80% reduction in API latency and saving ~$80K/month by identifying the anomalies in the platform.  
+• Architected Kafka and RabbitMQ producers/consumers for scalable microservice communication.  
+• Played a pivotal role in migrating a production service from .NET to Node.js, enhancing maintainability.  
+• Designed a reusable state-management abstraction, streamlining complex transitions across components.
+*/
 export const experienceArr = [
   {
     name: "Pluralsight",
@@ -61,8 +73,12 @@ export const experienceArr = [
       fullName: "Pluralsight India Pvt Ltd",
       link: "https://www.pluralsight.com/",
       duration: "June 2024 - Present",
-      description: ["WIP"],
-      technologies: ["React.js", "Node.js", "PostgreSQL"],
+      description: [
+        "Architected Kafka and RabbitMQ producers/consumers for scalable microservice communication.",
+        "Optimized critical SQL queries, achieving an 80% reduction in API latency and saving ~$80K/month by identifying the anomalies in the platform.",
+        "Played a pivotal role in migrating a production service from .NET to Node.js, enhancing maintainability.",
+        "Designed a reusable state-management abstraction, streamlining complex transitions across components."],
+      technologies: ["Node.js", "Kafka", "RabbitMQ", "React.js", "GraphQL", "PostgreSQL"],
     },
   },
   {
@@ -170,16 +186,16 @@ export const noteWorthyProjectsArr = [
     },
     tools: ["JS", "HTML", "CSS"],
   },
-  {
-    title: "Netflix clone",
-    description:
-      "A project which helped me to gain knowledge in CSS and improve my web development skill.",
-    links: {
-      github: "https://github.com/hemanth506/CSS-Netflix-Clone",
-      externalLink: "https://css-netflix-clone.vercel.app",
-    },
-    tools: ["CSS", "HTML", "JS"],
-  },
+  // {
+  //   title: "Netflix clone",
+  //   description:
+  //     "A project which helped me to gain knowledge in CSS and improve my web development skill.",
+  //   links: {
+  //     github: "https://github.com/hemanth506/CSS-Netflix-Clone",
+  //     externalLink: "https://css-netflix-clone.vercel.app",
+  //   },
+  //   tools: ["CSS", "HTML", "JS"],
+  // },
   {
     title: "Weather forecasting app",
     description:
@@ -322,9 +338,9 @@ const phrase = yearOfExperience.phrase + ' ' + toWords(yearOfExperience.yearOfEx
 export const infoDetails = {
   greetings: "Hi, my name is",
   name: "Hemanth Raaj G.",
-  briefMe: "I build things for the web.",
+  briefMe: "I develop high-scale systems",
   describeMe:
-    `I'm a Full-stack developer with ${phrase} years of experience. I enjoy creating websites, solving problems, and making the internet a more interesting place.`,
+    `I'm a Senior Software Engineer with ${phrase} years of experience building high-performance full-stack and backend systems. I enjoy solving complex problems, designing reliable distributed services, and turning ideas into scalable, production-ready software.`,
 };
 
 export const contactMeDetails = {
@@ -335,17 +351,17 @@ export const contactMeDetails = {
 };
 
 export const aboutDetails = {
-  para1:
-    "Hello! I'm Hemanth, and I enjoy creating things that live on the internet. My interest in web development began since 2019 ",
-  para2: {
-    content1: `With ${yearOfExperience.phrase}`,
+  para1: {
+    content1: `Hello! I’m Hemanth, a software engineer with ${yearOfExperience.phrase} `,
     content2: `${yearOfExperience.yearOfExp} years`,
-    content3:
-      "of experience, I've delved into various technologies such as React.js, Node.js, and Typescript. I've also started exploring React Native gradually. Solving DSA problems is a passion of mine, and I've successfully tackled over",
-    content4: "400",
-    content5: "problems across various platforms.",
+    content3: "of experience who enjoys building reliable, scalable systems for the web"
   },
-  para3:
-    "I've applied my skills in working with Twilio to create IVRs for Contact center solutions, providing enhanced customer experiences. Recently, I had the opportunity to delve into Generative AI tools from Google Cloud and AWS, which deepened my understanding of the basics of AI.",
-  para4: "I have experience working with the following technologies",
+  para2: "I currently work as an SDE-II at Pluralsight, where I design and build backend services and distributed systems with a focus on performance, reliability, and long-term maintainability.",
+  para3: "Previously, I worked at Factana Computing, building secure, cloud-based backend systems for enterprise use cases, and earlier gained strong full-stack experience across backend APIs, databases, and frontend applications.",
+  para4: {
+    content1: "I’m deeply interested in problem-solving and system design, and I’ve solved ",
+    content2: "550+ algorithmic problems",
+    content3: " on LeetCode and Scaler. I also maintain an open-source NPM package, reflecting my interest in building reusable, developer-friendly tools."
+  },
+  para5: "I have experience working with the following technologies:"
 };
