@@ -53,7 +53,7 @@ export const Home: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [scrollPosition]);
+  }, [handleScroll, scrollPosition]);
 
   const scrollToView = useCallback(
     (currentRef: React.RefObject<HTMLElement>, section: string): void => {
